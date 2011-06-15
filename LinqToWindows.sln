@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToWindows.Tests", "src\LinqToWindows.Tests\LinqToWindows.Tests.csproj", "{A75C7E85-FBA9-40D0-AB9D-C4049E63B41F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToWindows", "src\LinqToWindows\LinqToWindows.csproj", "{7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A75C7E85-FBA9-40D0-AB9D-C4049E63B41F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A75C7E85-FBA9-40D0-AB9D-C4049E63B41F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A75C7E85-FBA9-40D0-AB9D-C4049E63B41F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A75C7E85-FBA9-40D0-AB9D-C4049E63B41F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
