@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Muyou.LinqToWindows.Locale;
 using Muyou.LinqToWindows.Menus;
 
 namespace Muyou.LinqToWindows.Windows.Types.Dialogs
@@ -19,10 +20,10 @@ namespace Muyou.LinqToWindows.Windows.Types.Dialogs
                                 : ChildWindows.OfType<Edit>().SingleOrDefault();
             _openButton = ChildWindows == null
                               ? null
-                              : ChildWindows.OfType<Button>().Where(x => x.Text == "Open").SingleOrDefault();
+							  : ChildWindows.OfType<Button>().Where(x => x.Text == DialogText.Get().Open).SingleOrDefault();
             _closeButton = ChildWindows == null
                                ? null
-                               : ChildWindows.OfType<Button>().Where(x => x.Text == "Cancel").SingleOrDefault();
+                               : ChildWindows.OfType<Button>().Where(x => x.Text == DialogText.Get().Cancel).SingleOrDefault();
         }
 
         public void SetFileName(string fileName)
@@ -41,7 +42,7 @@ namespace Muyou.LinqToWindows.Windows.Types.Dialogs
             _openButton.Press();
         }
 
-        public void Close()
+        public override void Close()
         {
             _closeButton.Press();
         }

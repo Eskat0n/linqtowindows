@@ -61,7 +61,7 @@ namespace Muyou.LinqToWindows.Windows.Types
 			SendMessage(Handle, (uint) Wm.Syscommand, (IntPtr) Sc.Minimize, IntPtr.Zero);
 		}
 
-		public void Close()
+		public virtual void Close()
 		{
 			SendMessage(Handle, (uint) Wm.Close, IntPtr.Zero, IntPtr.Zero);
 		}
