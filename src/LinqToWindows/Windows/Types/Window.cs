@@ -72,7 +72,7 @@ namespace Muyou.LinqToWindows.Windows.Types
 		[DllImport("user32.dll")]
 		private static extern IntPtr SetFocus(IntPtr hWnd);
 
-		[DllImport("coredll.dll", SetLastError = true)]
+		[DllImport("user32.dll", SetLastError = true)]
 		private static extern IntPtr GetActiveWindow();
 		[DllImport("user32.dll", SetLastError = true)]
 		private static extern IntPtr SetActiveWindow(IntPtr hWnd);
