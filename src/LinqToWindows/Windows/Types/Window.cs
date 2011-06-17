@@ -56,6 +56,18 @@ namespace Muyou.LinqToWindows.Windows.Types
 			SendMessage(Handle, WindowMessages.Close, IntPtr.Zero, IntPtr.Zero);
 		}
 
+		public void PushKey(string key)
+		{
+			SetForeground();
+			_commandCreator.CreateKeydown(key).Execute();
+		}
+
+		public void ReleaseKey(string key)
+		{
+			SetForeground();
+			_commandCreator.CreateKeyup(key).Execute();
+		}
+
 		public void PressKey(string sequence)
 		{
 			SetForeground();

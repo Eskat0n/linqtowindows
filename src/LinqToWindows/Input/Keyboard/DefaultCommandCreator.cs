@@ -77,15 +77,22 @@ namespace Muyou.LinqToWindows.Input.Keyboard
 
 		private static ushort GetKeyCode(string key)
 		{
-			if (key.Length == 1)
-			{
-				if (key[0].IsInRange('A', 'Z') || key[0].IsInRange('0', '9'))
-					return key[0];
-			}
-			else if (KeyDescriptions.ContainsKey(key))
+			if (key.Length == 1 && (key[0].IsInRange('A', 'Z') || key[0].IsInRange('0', '9')))
+				return key[0];
+			if (KeyDescriptions.ContainsKey(key))
 				return KeyDescriptions[key];
 
 			throw new ArgumentOutOfRangeException("key", "Unrecognized key");
+		}
+
+		public KeyboardInputCommand CreateKeydown(string key)
+		{
+			return new KeydownInputCommand(GetKeyCode(key.ToUpperInvariant()));
+		}
+		
+		public KeyboardInputCommand CreateKeyup(string key)
+		{
+			return new KeyupInputCommand(GetKeyCode(key.ToUpperInvariant()));
 		}
 	}
 }
