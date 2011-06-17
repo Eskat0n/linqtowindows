@@ -70,6 +70,7 @@
     <Compile Include="Menus\NativeTypes\MenuItemInfo.cs" />
     <Compile Include="Menus\SubMenu.cs" />
     <Compile Include="Windows\NativeTypes\Bm.cs" />
+    <Compile Include="Windows\NativeTypes\Sc.cs" />
     <Compile Include="Windows\Types\ComboBox.cs" />
     <Compile Include="Windows\Types\ListBox.cs" />
     <Compile Include="Windows\Types\ScrollBar.cs" />
@@ -80,7 +81,7 @@
     <Compile Include="Windows\Factory\WindowFactory.cs" />
     <Compile Include="Extensibility\WindowsProfile.cs" />
     <Compile Include="Menus\Menu.cs" />
-    <Compile Include="Windows\NativeTypes\WindowMessages.cs" />
+    <Compile Include="Windows\NativeTypes\Wm.cs" />
     <Compile Include="Windows\Types\Dialogs\OpenFileDialog.cs" />
     <Compile Include="Windows\Types\Window.cs" />
     <Compile Include="Shell.cs" />

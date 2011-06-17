@@ -47,13 +47,23 @@ namespace Muyou.LinqToWindows.Windows.Types
 
     	public void SetText(string text)
         {
-            SendMessage(Handle, WindowMessages.SetText, IntPtr.Zero, text);
+            SendMessage(Handle, (uint) Wm.SetText, IntPtr.Zero, text);
             Text = text;
         }
 
+		public void Maximize()
+		{
+			SendMessage(Handle, (uint) Wm.Syscommand, (IntPtr) Sc.Maximize, IntPtr.Zero);
+		}
+
+		public void Minimize()
+		{
+			SendMessage(Handle, (uint) Wm.Syscommand, (IntPtr) Sc.Minimize, IntPtr.Zero);
+		}
+
 		public void Close()
 		{
-			SendMessage(Handle, WindowMessages.Close, IntPtr.Zero, IntPtr.Zero);
+			SendMessage(Handle, (uint) Wm.Close, IntPtr.Zero, IntPtr.Zero);
 		}
 
 		public void PushKey(string key)

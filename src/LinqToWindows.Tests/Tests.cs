@@ -104,7 +104,20 @@ namespace Muyou.LinqToWindows.Tests
 				.Where(x => x.Text.Contains("Notepad"))
 				.SingleOrDefault();
 
-			notepad.PressKey("+,`,1,.,0,1,2,3,4,5,6,7,8,9");
+			notepad.PressKey("+ ` 1 . 0 1 2 3 4 5 6 7 8 9");
+		}
+
+		[Fact]
+		public void FactMethodName3()
+		{
+			var shell = new Shell();
+
+			var notepad = shell.Windows
+				.Where(x => x.Text.Contains("Notepad"))
+				.SingleOrDefault();
+
+			notepad.Minimize();
+			notepad.Maximize();
 		}
     }
 }

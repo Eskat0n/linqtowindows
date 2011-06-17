@@ -3,7 +3,7 @@ namespace Muyou.LinqToWindows.Windows.NativeTypes
 	/// <summary>
 	/// Button Messages
 	/// </summary>
-	public enum Bm : uint
+	internal enum Bm : uint
 	{
 		/// <summary>
 		/// Simulates the user clicking a button. This message causes the button to receive the WM_LBUTTONDOWN and WM_LBUTTONUP messages, 
