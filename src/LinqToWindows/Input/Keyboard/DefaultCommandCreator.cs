@@ -75,6 +75,16 @@ namespace Muyou.LinqToWindows.Input.Keyboard
 			}
 		}
 
+		public KeyboardInputCommand CreateKeydown(string key)
+		{
+			return new KeydownInputCommand(GetKeyCode(key.ToUpperInvariant()));
+		}
+
+		public KeyboardInputCommand CreateKeyup(string key)
+		{
+			return new KeyupInputCommand(GetKeyCode(key.ToUpperInvariant()));
+		}
+
 		private static ushort GetKeyCode(string key)
 		{
 			if (key.Length == 1 && (key[0].IsInRange('A', 'Z') || key[0].IsInRange('0', '9')))
@@ -83,16 +93,6 @@ namespace Muyou.LinqToWindows.Input.Keyboard
 				return KeyDescriptions[key];
 
 			throw new ArgumentOutOfRangeException("key", "Unrecognized key");
-		}
-
-		public KeyboardInputCommand CreateKeydown(string key)
-		{
-			return new KeydownInputCommand(GetKeyCode(key.ToUpperInvariant()));
-		}
-		
-		public KeyboardInputCommand CreateKeyup(string key)
-		{
-			return new KeyupInputCommand(GetKeyCode(key.ToUpperInvariant()));
 		}
 	}
 }
