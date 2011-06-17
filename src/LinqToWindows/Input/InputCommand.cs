@@ -29,6 +29,9 @@ namespace Muyou.LinqToWindows.Input
 
 		public void Execute()
 		{
+			if (Chunks == null)
+				return;
+
 			foreach (var inputDataChunk in Chunks)
 			{
 				var chunk = inputDataChunk;

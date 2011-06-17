@@ -14,11 +14,6 @@ namespace Muyou.LinqToWindows.Input.Keyboard
                 .ToArray();
         }
 
-        protected KeyboardInputCommand(VirtualKeyCodes virtualKeyCodes)
-            : this((ushort) virtualKeyCodes)
-        {
-        }
-
         protected abstract IEnumerable<KeyboardInputData> CreateInputData(ushort virtualKeyCode);
 	}
 }

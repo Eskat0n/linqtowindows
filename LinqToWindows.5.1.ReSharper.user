@@ -3,12 +3,70 @@
     <string />
     <integer />
     <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
       <setting name="SolutionAnalysisEnabled">False</setting>
     </boolean>
   </SettingsComponent>
   <RecentFiles>
-    <RecentFiles />
-    <RecentEdits />
+    <RecentFiles>
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Extensibility/f:WindowsProfile.cs" caret="181" fromTop="5" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Extensibility/f:WindowConfiguration.cs" caret="368" fromTop="14" />
+      <File id="A75C7E85-FBA9-40D0-AB9D-C4049E63B41F/d:Extensibility/f:WindowsProfileTests.cs" caret="2002" fromTop="39" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Windows/d:Types/d:Dialogs/f:Dialog.cs" caret="439" fromTop="16" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Windows/d:Types/d:Dialogs/f:OpenFileDialog.cs" caret="1371" fromTop="37" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/f:Shell.cs" caret="897" fromTop="31" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Windows/d:Factory/f:WindowFactory.cs" caret="2572" fromTop="27" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Windows/d:Types/f:Button.cs" caret="959" fromTop="27" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:ICommandCreator.cs" caret="206" fromTop="8" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Windows/d:NativeTypes/f:Bm.cs" caret="305" fromTop="9" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Extensions/f:EnumerableExtensions.cs" caret="168" fromTop="7" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Extensions/f:CharExtensions.cs" caret="220" fromTop="8" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Windows/d:Types/f:Window.cs" caret="1985" fromTop="38" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Windows/d:Types/f:ComboBox.cs" caret="162" fromTop="6" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:NativeTypes/f:VirtualKeyCodes.cs" caret="898" fromTop="42" />
+      <File id="A75C7E85-FBA9-40D0-AB9D-C4049E63B41F/f:Tests.cs" caret="2467" fromTop="58" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/f:InputCommand.cs" caret="1034" fromTop="31" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:KeyboardInputCommand.cs" caret="406" fromTop="12" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:NativeTypes/f:KeyboardInputData.cs" caret="198" fromTop="8" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:KeydownInputCommand.cs" caret="578" fromTop="20" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:KeyupInputCommand.cs" caret="423" fromTop="15" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:KeypressInputCommand.cs" caret="893" fromTop="16" />
+      <File id="A75C7E85-FBA9-40D0-AB9D-C4049E63B41F/d:Input/d:Keyboard/f:DefaultCommandCreatorTests.cs" caret="1513" fromTop="50" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:DefaultCommandCreator.cs" caret="2334" fromTop="45" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/d:Exceptions/f:KeyChordIsTooLongException.cs" caret="272" fromTop="8" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:KeypressInputCommand.cs" caret="893" fromTop="40" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:KeypressInputCommand.cs" caret="318" fromTop="11" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/f:InputCommand.cs" caret="236" fromTop="9" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/f:InputCommand.cs" caret="1047" fromTop="32" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:KeyboardInputCommand.cs" caret="346" fromTop="11" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:KeypressInputCommand.cs" caret="883" fromTop="15" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:KeypressInputCommand.cs" caret="883" fromTop="22" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:KeypressInputCommand.cs" caret="884" fromTop="29" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:KeypressInputCommand.cs" caret="0" fromTop="0" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:KeypressInputCommand.cs" caret="893" fromTop="28" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:KeypressInputCommand.cs" caret="893" fromTop="46" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:KeypressInputCommand.cs" caret="893" fromTop="16" />
+      <File id="A75C7E85-FBA9-40D0-AB9D-C4049E63B41F/d:Input/d:Keyboard/f:DefaultCommandCreatorTests.cs" caret="1361" fromTop="40" />
+      <File id="A75C7E85-FBA9-40D0-AB9D-C4049E63B41F/d:Input/d:Keyboard/f:DefaultCommandCreatorTests.cs" caret="1385" fromTop="42" />
+      <File id="A75C7E85-FBA9-40D0-AB9D-C4049E63B41F/d:Input/d:Keyboard/f:DefaultCommandCreatorTests.cs" caret="722" fromTop="18" />
+      <File id="A75C7E85-FBA9-40D0-AB9D-C4049E63B41F/d:Input/d:Keyboard/f:DefaultCommandCreatorTests.cs" caret="1065" fromTop="29" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:DefaultCommandCreator.cs" caret="1346" fromTop="41" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:DefaultCommandCreator.cs" caret="2162" fromTop="54" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:DefaultCommandCreator.cs" caret="2320" fromTop="56" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:DefaultCommandCreator.cs" caret="2251" fromTop="51" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:DefaultCommandCreator.cs" caret="1436" fromTop="22" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:DefaultCommandCreator.cs" caret="1900" fromTop="31" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:DefaultCommandCreator.cs" caret="2024" fromTop="30" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:DefaultCommandCreator.cs" caret="1972" fromTop="25" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:DefaultCommandCreator.cs" caret="447" fromTop="12" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:DefaultCommandCreator.cs" caret="624" fromTop="21" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:DefaultCommandCreator.cs" caret="534" fromTop="17" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:DefaultCommandCreator.cs" caret="2334" fromTop="46" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/f:DefaultCommandCreator.cs" caret="2334" fromTop="45" />
+      <File id="7FFFD3E5-EA88-4CF5-8CAD-F80FCA3DE7FA/d:Input/d:Keyboard/d:Exceptions/f:KeyChordIsTooLongException.cs" caret="337" fromTop="8" />
+    </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
     <NAntPath value="" />
@@ -21,4 +79,158 @@
     </NUnitInstallDir>
     <UseAddins>Never</UseAddins>
   </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="IEquatable" priority="0" />
+      <Item value="WindowsProfile`0" priority="0" />
+      <Item value="var" priority="6" />
+      <Item value="this" priority="6" />
+      <Item value="other" priority="1" />
+      <Item value="WindowConfiguration`0" priority="0" />
+      <Item value="fact" priority="4" />
+      <Item value="shell" priority="3" />
+      <Item value="x" priority="7" />
+      <Item value="new" priority="18" />
+      <Item value="List" priority="0" />
+      <Item value="Window`0" priority="5" />
+      <Item value="openDialog" priority="1" />
+      <Item value="Edit`0" priority="0" />
+      <Item value="edits" priority="0" />
+      <Item value="menu" priority="0" />
+      <Item value="public" priority="6" />
+      <Item value="where" priority="0" />
+      <Item value="TDialog`0" priority="3" />
+      <Item value="Dialog`0" priority="0" />
+      <Item value="Activator`0" priority="0" />
+      <Item value="typeof" priority="4" />
+      <Item value="if" priority="4" />
+      <Item value="GetType`0" priority="0" />
+      <Item value="return" priority="7" />
+      <Item value="Handle" priority="0" />
+      <Item value="ClassName" priority="0" />
+      <Item value="Text" priority="0" />
+      <Item value="ChildWindows" priority="0" />
+      <Item value="Menu" priority="0" />
+      <Item value="OpenFileDialog`0" priority="0" />
+      <Item value="else" priority="1" />
+      <Item value="private" priority="2" />
+      <Item value="readonly" priority="2" />
+      <Item value="IDictionary" priority="0" />
+      <Item value="string" priority="4" />
+      <Item value="Dictionary&lt;string,ushort&gt;" priority="0" />
+      <Item value="char" priority="8" />
+      <Item value="foreach" priority="3" />
+      <Item value="yield return" priority="7" />
+      <Item value="key" priority="11" />
+      <Item value="KeypressInputCommand`0" priority="5" />
+      <Item value="_keyDescriptions" priority="1" />
+      <Item value="static" priority="6" />
+      <Item value="bool" priority="1" />
+      <Item value="lower" priority="0" />
+      <Item value="upper" priority="0" />
+      <Item value="Assert`0" priority="1" />
+      <Item value="commands" priority="2" />
+      <Item value="Bm`0" priority="0" />
+      <Item value="DefaultCommandCreator`0" priority="0" />
+      <Item value="_commandCreator" priority="0" />
+      <Item value="sequence" priority="1" />
+      <Item value="keyboardInputCommand" priority="0" />
+      <Item value="SetActive`0" priority="0" />
+      <Item value="EXCEPINFO`0" priority="0" />
+      <Item value="IEnumerable" priority="0" />
+      <Item value="enumerable" priority="3" />
+      <Item value="T`0" priority="0" />
+      <Item value="action" priority="1" />
+      <Item value="element" priority="0" />
+      <Item value="Shell`0" priority="0" />
+      <Item value="SetForeground`0" priority="0" />
+      <Item value="browserWindow" priority="0" />
+      <Item value="SimpleKeys" priority="0" />
+      <Item value="params" priority="0" />
+      <Item value="chars" priority="0" />
+      <Item value="true" priority="0" />
+      <Item value="notepad" priority="0" />
+      <Item value="class" priority="1" />
+      <Item value="KeyboardInputCommand`0" priority="2" />
+      <Item value="Chunks" priority="0" />
+      <Item value="null" priority="1" />
+      <Item value="KeyboardInputData" priority="1" />
+      <Item value="ae" priority="0" />
+      <Item value="KeydownInputCommand`0" priority="1" />
+      <Item value="KeyupInputCommand`0" priority="1" />
+      <Item value="RemoveEmptyEntries" priority="1" />
+      <Item value="false" priority="0" />
+      <Item value="chordKeys" priority="4" />
+      <Item value="Length" priority="1" />
+      <Item value="throw" priority="2" />
+      <Item value="base" priority="1" />
+      <Item value="ushort" priority="0" />
+      <Item value="ArgumentOutOfRangeException" priority="0" />
+      <Item value="GetKeyCode`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Muyou.LinqToWindows.Extensibility.WindowConfiguration">
+      <Item value="Equals`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Muyou.LinqToWindows.Shell">
+      <Item value="Windows" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="Where`1" priority="3" />
+      <Item value="SingleOrDefault`1" priority="3" />
+      <Item value="SelectMany`3" priority="0" />
+      <Item value="OfType`1" priority="3" />
+      <Item value="ToList`1" priority="0" />
+      <Item value="ElementAt`1" priority="1" />
+      <Item value="Count`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Muyou.LinqToWindows.Windows.Window">
+      <Item value="Text" priority="2" />
+      <Item value="ChildWindows" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Contains`0" priority="4" />
+      <Item value="Split`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Muyou.LinqToWindows.Windows.Edit">
+      <Item value="Text" priority="0" />
+      <Item value="SetText`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Activator">
+      <Item value="CreateInstance`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Muyou.LinqToWindows.Windows.Types.Dialogs.OpenFileDialog">
+      <Item value="SelectFile`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IDictionary`2">
+      <Item value="ContainsKey`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Char">
+      <Item value="IsInRange`0" priority="0" />
+      <Item value="Equals`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Xunit.Assert">
+      <Item value="Empty`0" priority="0" />
+      <Item value="Equal`1" priority="0" />
+      <Item value="IsType`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Muyou.LinqToWindows.Windows.NativeTypes.Bm">
+      <Item value="Click" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Muyou.LinqToWindows.Input.Keyboard.DefaultCommandCreator">
+      <Item value="Create`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Muyou.LinqToWindows.Input.Keyboard.KeyboardInputCommand">
+      <Item value="Execute`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Action`1">
+      <Item value="Invoke`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Muyou.LinqToWindows.Windows.Types.Window">
+      <Item value="Text" priority="0" />
+      <Item value="PressKey`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="1" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
 </Configuration>

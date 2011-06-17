@@ -4,7 +4,8 @@ using System.Linq;
 using System.Threading;
 using Muyou.LinqToWindows.Extensibility;
 using Muyou.LinqToWindows.Menus;
-using Muyou.LinqToWindows.Windows;
+using Muyou.LinqToWindows.Windows.Types;
+using Muyou.LinqToWindows.Windows.Types.Dialogs;
 using Xunit;
 
 namespace Muyou.LinqToWindows.Tests
@@ -21,7 +22,7 @@ namespace Muyou.LinqToWindows.Tests
 			public void OpenPrint()
 			{
 				SetForeground();
-				PressKey();
+				PressKey("Ctrl+P");
 
 				Thread.Sleep(1000);
 			}
@@ -55,7 +56,7 @@ namespace Muyou.LinqToWindows.Tests
         		.Where(x => x.Text == "Properties")
 				.SingleOrDefault();
 
-			printWindowButtons.PressViaPost();
+			printWindowButtons.PressByPost();
 
 			Thread.Sleep(1000);
 
@@ -67,5 +68,43 @@ namespace Muyou.LinqToWindows.Tests
         		.Where(x => x.Text.Contains("Advanced"))
         		.SingleOrDefault();
         }
+
+		[Fact]
+		public void FactMethodName()
+		{
+			var shell = new Shell();
+
+			var openDialog = shell.Windows
+				.OfType<Dialog>()
+				.Where(x => x.Text.Contains("Open"))
+				.SingleOrDefault()
+				.Cast<OpenFileDialog>();
+
+			openDialog.SelectFile(@"D:\fileToUpload.jpg");
+		}
+
+		[Fact]
+		public void CanSendKeysToBrowser()
+		{
+			var shell = new Shell();
+
+			var browserWindow = shell.Windows
+				.Where(x => x.Text.Contains("muyou"))
+				.SingleOrDefault();
+
+			browserWindow.PressKey("Enter");
+		}
+
+		[Fact]
+		public void FactMethodName1()
+		{
+			var shell = new Shell();
+
+			var notepad = shell.Windows
+				.Where(x => x.Text.Contains("Notepad"))
+				.SingleOrDefault();
+
+			notepad.PressKey("+,`,1,.,0,1,2,3,4,5,6,7,8,9");
+		}
     }
 }

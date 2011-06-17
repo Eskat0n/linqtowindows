@@ -4,6 +4,7 @@ using System.Runtime.InteropServices;
 using Muyou.LinqToWindows.Extensibility;
 using Muyou.LinqToWindows.Windows;
 using Muyou.LinqToWindows.Windows.Factory;
+using Muyou.LinqToWindows.Windows.Types;
 
 namespace Muyou.LinqToWindows
 {

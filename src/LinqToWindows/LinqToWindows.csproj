@@ -41,10 +41,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensibility\WindowConfiguration.cs" />
+    <Compile Include="Extensions\CharExtensions.cs" />
+    <Compile Include="Extensions\EnumerableExtensions.cs" />
     <Compile Include="Input\InputCommand.cs" />
+    <Compile Include="Input\Keyboard\DefaultCommandCreator.cs" />
     <Compile Include="Input\Keyboard\ICommandCreator.cs" />
     <Compile Include="Input\Keyboard\KeyboardInputCommand.cs" />
+    <Compile Include="Input\Keyboard\Exceptions\KeyChordIsTooLongException.cs" />
+    <Compile Include="Input\Keyboard\KeydownInputCommand.cs" />
     <Compile Include="Input\Keyboard\KeypressInputCommand.cs" />
+    <Compile Include="Input\Keyboard\KeyupInputCommand.cs" />
+    <Compile Include="Input\Keyboard\Exceptions\MalformedKeyChordException.cs" />
     <Compile Include="Input\NativeTypes\KeyboardEventFlags.cs" />
     <Compile Include="Input\NativeTypes\MouseEventFlags.cs" />
     <Compile Include="Input\NativeTypes\HardwareInputData.cs" />
@@ -62,14 +69,20 @@
     <Compile Include="Menus\NativeTypes\Masks.cs" />
     <Compile Include="Menus\NativeTypes\MenuItemInfo.cs" />
     <Compile Include="Menus\SubMenu.cs" />
-    <Compile Include="Windows\Button.cs" />
-    <Compile Include="Windows\Edit.cs" />
+    <Compile Include="Windows\NativeTypes\Bm.cs" />
+    <Compile Include="Windows\Types\ComboBox.cs" />
+    <Compile Include="Windows\Types\ListBox.cs" />
+    <Compile Include="Windows\Types\ScrollBar.cs" />
+    <Compile Include="Windows\Types\Static.cs" />
+    <Compile Include="Windows\Types\Button.cs" />
+    <Compile Include="Windows\Types\Edit.cs" />
+    <Compile Include="Windows\Types\Dialogs\Dialog.cs" />
     <Compile Include="Windows\Factory\WindowFactory.cs" />
     <Compile Include="Extensibility\WindowsProfile.cs" />
     <Compile Include="Menus\Menu.cs" />
     <Compile Include="Windows\NativeTypes\WindowMessages.cs" />
-    <Compile Include="Windows\OpenFileDialog.cs" />
-    <Compile Include="Windows\Window.cs" />
+    <Compile Include="Windows\Types\Dialogs\OpenFileDialog.cs" />
+    <Compile Include="Windows\Types\Window.cs" />
     <Compile Include="Shell.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

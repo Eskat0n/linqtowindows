@@ -4,6 +4,7 @@ using System.Linq;
 using Muyou.LinqToWindows.Extensibility;
 using Muyou.LinqToWindows.Menus;
 using Muyou.LinqToWindows.Windows;
+using Muyou.LinqToWindows.Windows.Types;
 using Xunit;
 
 namespace Muyou.LinqToWindows.Tests.Extensibility

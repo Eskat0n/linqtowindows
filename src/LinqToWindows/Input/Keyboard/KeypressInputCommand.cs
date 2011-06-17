@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Muyou.LinqToWindows.Input.NativeTypes;
 
 namespace Muyou.LinqToWindows.Input.Keyboard
@@ -10,30 +11,22 @@ namespace Muyou.LinqToWindows.Input.Keyboard
         {
         }
 
-        public KeypressInputCommand(VirtualKeyCodes virtualKeyCodes)
-            : base(virtualKeyCodes)
-        {
-        }
-
-        protected override IEnumerable<KeyboardInputData> CreateInputData(ushort virtualKeyCode)
-        {
-            return new[]
-                       {
-                           new KeyboardInputData
-                               {
-                                   wScan = 0,
-                                   time = 0,
-                                   dwFlags = 0,
-                                   wVk = virtualKeyCode
-                               },
-                           new KeyboardInputData
-                               {
-                                   wScan = 0,
-                                   time = 0,
-                                   dwFlags = (uint) KeyboardEventFlags.KEYEVENTF_KEYUP,
-                                   wVk = virtualKeyCode
-                               }
-                       };
-        }
+		protected override IEnumerable<KeyboardInputData> CreateInputData(ushort virtualKeyCode)
+		{
+			yield return new KeyboardInputData
+			             	{
+			             		wScan = 0,
+			             		time = 0,
+			             		dwFlags = 0,
+			             		wVk = virtualKeyCode
+			             	};
+			yield return new KeyboardInputData
+			             	{
+			             		wScan = 0,
+			             		time = 0,
+			             		dwFlags = (uint) KeyboardEventFlags.KEYEVENTF_KEYUP,
+			             		wVk = virtualKeyCode
+			             	};
+		}
     }
 }

@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Muyou.LinqToWindows.Windows;
+using Muyou.LinqToWindows.Windows.Types;
 
 namespace Muyou.LinqToWindows.Extensibility
 {
@@ -19,13 +19,8 @@ namespace Muyou.LinqToWindows.Extensibility
 		{
 			var windowConfiguration = new WindowConfiguration(typeof(TWindow), className);
 
-			if (string.IsNullOrEmpty(className) == false && _configurations.Any(x => IsConfigurationsSimilar(x, windowConfiguration)) == false)
+			if ((string.IsNullOrEmpty(className) || _configurations.Any(x => x.Equals(windowConfiguration))) == false)
 				_configurations.Add(windowConfiguration);
-		}
-
-		private bool IsConfigurationsSimilar(WindowConfiguration x, WindowConfiguration y)
-		{
-			return x.ClassName.Equals(y.ClassName, StringComparison.InvariantCultureIgnoreCase) || x.WindowType == y.WindowType;
 		}
 	}
 }

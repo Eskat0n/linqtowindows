@@ -5,6 +5,8 @@ using System.Runtime.InteropServices;
 using System.Text;
 using Muyou.LinqToWindows.Extensibility;
 using Muyou.LinqToWindows.Menus;
+using Muyou.LinqToWindows.Windows.Types;
+using Muyou.LinqToWindows.Windows.Types.Dialogs;
 
 namespace Muyou.LinqToWindows.Windows.Factory
 {
@@ -13,9 +15,13 @@ namespace Muyou.LinqToWindows.Windows.Factory
         private readonly Dictionary<string, Type> _windowClassTypes
             = new Dictionary<string, Type>
                                     {
-//                                        {"#32770", typeof(OpenFileDialog)},
-                                        {"Edit", typeof(Edit)},
-                                        {"Button", typeof(Button)}
+                                        {"#32770", typeof(Dialog)},
+										{"Button", typeof(Button)},
+										{"ComboBox", typeof(ComboBox)},
+                                        {"Edit", typeof(Edit)},                                        										
+										{"ListBox", typeof(ListBox)},
+										{"ScrollBar", typeof(ScrollBar)},
+										{"Static", typeof(Static)}
                                     };
 
     	internal WindowFactory()
