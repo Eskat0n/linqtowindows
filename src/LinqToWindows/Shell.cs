@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using Muyou.LinqToWindows.Extensibility;
-using Muyou.LinqToWindows.Windows;
 using Muyou.LinqToWindows.Windows.Factory;
 using Muyou.LinqToWindows.Windows.Types;
 
@@ -16,7 +15,10 @@ namespace Muyou.LinqToWindows
         private ICollection<Window> _windows;
         private ICollection<Window> _childWindows;
 
-        public IEnumerable<Window> Windows { get { return EnumerateWindows(); } }
+        public IEnumerable<Window> Windows
+        {
+            get { return EnumerateWindows(); }
+        }
 
     	public Shell()
     	{
