@@ -1,4 +1,7 @@
+
 bin/
 obj/
 _ReSharper.LinqToWindows/
+*.resharper
+*.user
 *.suo
