@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>LinqToWindows</id>
+    <version>1.0.2</version>
+    <title>LinqToWindows</title>
+    <authors>Eskat0n</authors>
+    <owners>Muyou/Eskat0n</owners>
+    <licenseUrl>http://www.opensource.org/licenses/mit-license.php/</licenseUrl>
+    <projectUrl>https://github.com/Eskat0n/linqtowindows</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>LinqToWindows provides a bunch of ways to access and change opened windows</description>
+    <summary>LinqToWindows provides a bunch of ways to access and change opened windows</summary>
+    <language>en-US</language>
+    <tags>ui testing, automation, win32api</tags>
+  </metadata>
+	<files>
+		<file src="src\LinqToWindows\bin\Release\LinqToWindows.dll" target="lib\LinqToWindows.dll" />
+		<file src="src\LinqToWindows\bin\Release\LinqToWindows.pdb" target="lib\LinqToWindows.pdb" />
+	</files>
+</package>
