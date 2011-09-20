@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using Muyou.LinqToWindows.Extensions;
+using Muyou.LinqToWindows.Input;
 using Muyou.LinqToWindows.Input.Keyboard;
 using Muyou.LinqToWindows.Menus;
 using Muyou.LinqToWindows.Windows.NativeTypes;
@@ -10,14 +11,15 @@ namespace Muyou.LinqToWindows.Windows.Types
 {
     public class Window
     {
-    	private readonly DefaultCommandCreator _commandCreator = new DefaultCommandCreator();
+    	private readonly DefaultCommandCreator _commandCreator;
 
-    	protected readonly IntPtr Handle;
+    	protected readonly IntPtr Handle;		
 
     	public IEnumerable<Window> ChildWindows { get; private set; }
     	public Menu Menu { get; private set; }
     	public string ClassName { get; private set; }
         public string Text { get; protected set; }
+		public InputMode InputMode { get; set; }		
 
         public Window(IntPtr handle, string className, string text, IEnumerable<Window> childWindows = null, Menu menu = null)
         {
@@ -26,7 +28,12 @@ namespace Muyou.LinqToWindows.Windows.Types
             Text = text;
             ChildWindows = childWindows;
         	Menu = menu;
+			InputMode = InputMode.Send;
+
+			_commandCreator = new DefaultCommandCreator(handle);
         }
+
+		public IntPtr WindowHandle { get { return Handle; } }
 
     	public bool SetFocus()
     	{
@@ -68,20 +75,17 @@ namespace Muyou.LinqToWindows.Windows.Types
 
 		public void PushKey(string key)
 		{
-			SetForeground();
-			_commandCreator.CreateKeydown(key).Execute();
+			_commandCreator.CreateKeydown(key).Execute(InputMode);
 		}
 
 		public void ReleaseKey(string key)
 		{
-			SetForeground();
-			_commandCreator.CreateKeyup(key).Execute();
+			_commandCreator.CreateKeyup(key).Execute(InputMode);
 		}
 
 		public void PressKey(string sequence)
 		{
-			SetForeground();
-			_commandCreator.Create(sequence).ForEach(x => x.Execute());
+			_commandCreator.Create(sequence).ForEach(x => x.Execute(InputMode));
 		}
 
     	[DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = false)]

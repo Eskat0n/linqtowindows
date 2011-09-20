@@ -6,8 +6,8 @@ namespace Muyou.LinqToWindows.Input.Keyboard
 {
     public class KeypressInputCommand : KeyboardInputCommand
     {
-        public KeypressInputCommand(ushort keyCode)
-            : base(keyCode)
+        public KeypressInputCommand(IntPtr handle, ushort keyCode)
+            : base(handle, keyCode)
         {
         }
 

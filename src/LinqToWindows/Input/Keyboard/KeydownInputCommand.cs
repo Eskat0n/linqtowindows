@@ -1,12 +1,13 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Muyou.LinqToWindows.Input.NativeTypes;
 
 namespace Muyou.LinqToWindows.Input.Keyboard
 {
 	public class KeydownInputCommand : KeyboardInputCommand
 	{
-		public KeydownInputCommand(ushort keyCode)
-			: base(keyCode)
+		public KeydownInputCommand(IntPtr handle, ushort keyCode)
+			: base(handle, keyCode)
 		{
 		}
 

@@ -7,6 +7,8 @@ namespace Muyou.LinqToWindows.Input.Keyboard
 {
 	public class DefaultCommandCreator : ICommandCreator
 	{
+		private readonly IntPtr _handle;
+
 		private static readonly IDictionary<string, ushort> KeyDescriptions
 			= new Dictionary<string, ushort>
 			  	{
@@ -51,6 +53,16 @@ namespace Muyou.LinqToWindows.Input.Keyboard
 			  		{"'", 0xDE},
 			  	};
 
+		public DefaultCommandCreator()
+		{
+			_handle = IntPtr.Zero;
+		}
+
+		public DefaultCommandCreator(IntPtr handle)
+		{
+			_handle = handle;
+		}
+
 		public IEnumerable<KeyboardInputCommand> Create(string sequence)
 		{
 			var keySequence = sequence.ToUpperInvariant().Split(new[] {' '}, StringSplitOptions.RemoveEmptyEntries);
@@ -58,7 +70,7 @@ namespace Muyou.LinqToWindows.Input.Keyboard
 			foreach (var key in keySequence)
 			{
 				if (key.Contains("+") == false)
-					yield return new KeypressInputCommand(GetKeyCode(key));
+					yield return new KeypressInputCommand(_handle, GetKeyCode(key));
 				else
 				{
 					var chordKeys = key.Split(new[] {'+'}, StringSplitOptions.RemoveEmptyEntries);
@@ -68,21 +80,21 @@ namespace Muyou.LinqToWindows.Input.Keyboard
 					if (chordKeys.Length != 2)
 						throw new MalformedKeyChordException(key);
 
-					yield return new KeydownInputCommand(GetKeyCode(chordKeys[0]));
-					yield return new KeypressInputCommand(GetKeyCode(chordKeys[1]));
-					yield return new KeyupInputCommand(GetKeyCode(chordKeys[2]));
+					yield return new KeydownInputCommand(_handle, GetKeyCode(chordKeys[0]));
+					yield return new KeypressInputCommand(_handle, GetKeyCode(chordKeys[1]));
+					yield return new KeyupInputCommand(_handle, GetKeyCode(chordKeys[0]));
 				}
 			}
 		}
 
 		public KeyboardInputCommand CreateKeydown(string key)
 		{
-			return new KeydownInputCommand(GetKeyCode(key.ToUpperInvariant()));
+			return new KeydownInputCommand(_handle, GetKeyCode(key.ToUpperInvariant()));
 		}
 
 		public KeyboardInputCommand CreateKeyup(string key)
 		{
-			return new KeyupInputCommand(GetKeyCode(key.ToUpperInvariant()));
+			return new KeyupInputCommand(_handle, GetKeyCode(key.ToUpperInvariant()));
 		}
 
 		private static ushort GetKeyCode(string key)

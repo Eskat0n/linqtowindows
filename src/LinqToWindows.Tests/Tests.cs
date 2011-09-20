@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Threading;
 using Muyou.LinqToWindows.Extensibility;
+using Muyou.LinqToWindows.Input;
 using Muyou.LinqToWindows.Menus;
 using Muyou.LinqToWindows.Windows.Types;
 using Muyou.LinqToWindows.Windows.Types.Dialogs;
@@ -118,6 +120,19 @@ namespace Muyou.LinqToWindows.Tests
 
 			notepad.Minimize();
 			notepad.Maximize();
+		}
+		
+		[Fact]
+		public void FactMethodName4()
+		{
+			var shell = new Shell();
+
+			var notepad = shell.Windows
+				.Where(x => x.Text.Contains("Notepad"))
+				.SingleOrDefault();
+
+			notepad.InputMode = InputMode.Post;
+			notepad.PressKey("F5");
 		}
     }
 }
